@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API</title>
+    <title>Document</title>
 </head>
 
-<body>
-    <script>
-        var key = 'c2d6f6f974cc0761aeacc70ce99d3e25';
-        var city = "Fes";
-        var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`
 
-        fetch(url)
-            .then(response => {
-                // handle the response
-                return response.json()
-            }).then(json => {
-                var city = json.name
-                var weather = json.weather[0].main
-                console.log(city)
-                console.log(weather)
-            })
-            .catch(error => {
-                // handle the error
-                console.log(error)
-            });
 
-    </script>
+       <select id="framework"  multiple>
+            <option value="">Angular</option>
+            <option value="1">fes</option>
+            <option value="2">Vue.js</option>
+            <option>Ember.js</option>
+        </select>
+        <button id="btn">Get the Selected Value</button>
+
+   <p id="text"> hello</p>
+ 
 </body>
-
+</html>
+<body>
+    <script src="java.js"></script>
+</body>
 </html>
