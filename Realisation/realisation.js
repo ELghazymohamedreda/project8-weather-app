@@ -2,8 +2,6 @@
  
 
  
-
-
 var outputHTML = ""
 function onSearch() {
  
