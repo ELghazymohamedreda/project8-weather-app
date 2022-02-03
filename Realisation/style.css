@@ -1,44 +1,66 @@
-body,
-html {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url("656971-alerte-orage-a-paris-et-en-ile-de-france-les-recommandations.jpg");
-    background-repeat: no-repeat;
+body{
+    background-image: url('https://c.tenor.com/1KxWSlTlIZMAAAAC/clouds-anime.gif');
     background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+.mb{
+    display: flex;
+    }
+    .iconW{
+    margin-left: 5px;
+    margin-top: 5px;
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+html,
+body {
+    height: 100%
 }
 
+* {
+    padding: 0px;
+    margin: 0px
+}
+
+body {
+    background-color: #a5a5b1;
+    display: grid;
+    place-items: center
+}
 .search {
-    margin-bottom: auto;
+    margin-bottom: 100px;
     margin-top: 10px;
     height: 70px;
     background-color: #fff;
-    padding: 10px;
+    border-radius: 40px;
+    padding: 10px
 }
 
 .search_input {
     color: rgb(7, 7, 7);
     border: 0;
     outline: 0;
-    background-color: #fff0f3;
+    background: none;
     width: 0;
     margin-top: 5px;
     caret-color: transparent;
     line-height: 40px;
-    transition: width 0.4s linear;
+    transition: width 0.4s linear
 }
 
 .search .search_input {
     padding: 0 10px;
     width: 550px;
     caret-color: rgb(92, 15, 47);
-    transition: width 0.4s linear ;
+    transition: width 0.4s linear
 }
 
 .search:hover>.search_icon {
-    background: #fff0f3;
-    color: #283618;
+    background: rgb(146, 151, 199);
+    color: rgb(0, 0, 0)
 }
 
 .search_icon {
@@ -50,45 +72,38 @@ html {
     align-items: center;
     border-radius: 50%;
     color: white;
-    background-color: black;
+    background-color: #9298ba
 }
 
-a:link {
-    text-decoration: none
-}
 
-body {
-    color: rgb(255, 255, 255);
-    overflow-x: hidden;
-    height: 100%;
-    background-color: #CFD8DC;
-    background-repeat: no-repeat
-}
 
 .card {
-    background-color: rgb(255, 255, 255);
-    background-size: cover;
-    width: 600px;
-    height: 350px;
-    border-radius: 20px;
-    box-shadow: 0px 8px 16px 4px #9E9E9E;
-    margin-top: 0px;
-
+    background-color: white;
+    border-radius: 50px;
+    color: #010102;
+    font-family: 'Marcellus', serif
 
 }
 
-.time-font {
-    font-size: 50px
+#heading {
+    font-size: 55px;
+    color: #2b304d
 }
 
-.sm-font {
-    font-size: 18px
+.temp {
+    place-items: center
 }
 
-.med-font {
-    font-size: 28px
+.temp-details>p>span,
+.grey {
+    color: #a3acc1;
+    font-size: 12px
 }
 
-.large-font {
-    font-size: 60px
+.fa {
+    color: #a5a5b1
+}
+
+*:focus {
+    outline: none
 }
